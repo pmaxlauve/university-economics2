@@ -1,3 +1,5 @@
+console.log(uData);
+
 const data = {
     name: '2019 US Employment',
     color: 'magenta',
@@ -47,3 +49,5 @@ const data = {
     .color('color')
     .radiusScaleExponent(1)
     (document.getElementById('chart'));
+
+    

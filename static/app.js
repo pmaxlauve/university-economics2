@@ -1,4 +1,12 @@
-console.log(uData);
+
+
+var employed = uData[0].Employed_data;
+var unemployed = uData[1].unemployed_data;
+
+console.log(employed);
+console.log(unemployed);
+
+
 
 const data = {
     name: '2019 US Employment',

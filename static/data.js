@@ -7,4 +7,510 @@ var uData = [{"Employed_data":[{"employment_id":1,"year":2009,"less_hs":10371,"h
 ];
 
 
-// console.log(uData);
+
+var sbData = {
+        "total":[
+            {
+              "emp_status": "Civilian noninstitutional population",
+              "less_hs": 21627,
+              "hs_diploma": 62460,
+              "some_college": 34711,
+              "associate": 22802,
+              "bachelor": 50049,
+              "adv_degree": 29778,
+              "total": 221427
+            },
+            {
+              "emp_status": "Civilian labor force",
+              "less_hs": 9976,
+              "hs_diploma": 36162,
+              "some_college": 21592,
+              "associate": 15829,
+              "bachelor": 36672,
+              "adv_degree": 22217,
+              "total": 142448
+            },
+            {
+              "emp_status": "Participation rate",
+              "less_hs": 46,
+              "hs_diploma": 58,
+              "some_college": 62,
+              "associate": 69,
+              "bachelor": 73,
+              "adv_degree": 75,
+              "total": 384
+            },
+            {
+              "emp_status": "Employed",
+              "less_hs": 9441,
+              "hs_diploma": 34837,
+              "some_college": 20882,
+              "associate": 15400,
+              "bachelor": 35850,
+              "adv_degree": 21805,
+              "total": 138215
+            },
+            {
+              "emp_status": "Employment-population ratio",
+              "less_hs": 44,
+              "hs_diploma": 56,
+              "some_college": 60,
+              "associate": 68,
+              "bachelor": 72,
+              "adv_degree": 73,
+              "total": 372
+            },
+            {
+              "emp_status": "Unemployed",
+              "less_hs": 535,
+              "hs_diploma": 1324,
+              "some_college": 709,
+              "associate": 429,
+              "bachelor": 822,
+              "adv_degree": 412,
+              "total": 4231
+            },
+            {
+              "emp_status": "Unemployment rate",
+              "less_hs": 5,
+              "hs_diploma": 4,
+              "some_college": 3,
+              "associate": 3,
+              "bachelor": 2,
+              "adv_degree": 2,
+              "total": 19
+            }
+          ],
+          "men":[
+            {
+              "emp_status": "Civilian noninstitutional population",
+              "less_hs": 10832,
+              "hs_diploma": 31429,
+              "some_college": 16557,
+              "associate": 10022,
+              "bachelor": 23646,
+              "adv_degree": 13892,
+              "total": 106378
+            },
+            {
+              "emp_status": "Civilian labor force",
+              "less_hs": 6356,
+              "hs_diploma": 21277,
+              "some_college": 11503,
+              "associate": 7597,
+              "bachelor": 18567,
+              "adv_degree": 10646,
+              "total": 75946
+            },
+            {
+              "emp_status": "Participation rate",
+              "less_hs": 59,
+              "hs_diploma": 68,
+              "some_college": 70,
+              "associate": 76,
+              "bachelor": 79,
+              "adv_degree": 77,
+              "total": 427
+            },
+            {
+              "emp_status": "Employed",
+              "less_hs": 6047,
+              "hs_diploma": 20512,
+              "some_college": 11161,
+              "associate": 7406,
+              "bachelor": 18151,
+              "adv_degree": 10454,
+              "total": 73731
+            },
+            {
+              "emp_status": "Employment-population ratio",
+              "less_hs": 56,
+              "hs_diploma": 65,
+              "some_college": 67,
+              "associate": 74,
+              "bachelor": 77,
+              "adv_degree": 75,
+              "total": 414
+            },
+            {
+              "emp_status": "Unemployed",
+              "less_hs": 309,
+              "hs_diploma": 765,
+              "some_college": 342,
+              "associate": 191,
+              "bachelor": 416,
+              "adv_degree": 193,
+              "total": 2216
+            },
+            {
+              "emp_status": "Unemployment rate",
+              "less_hs": 5,
+              "hs_diploma": 4,
+              "some_college": 3,
+              "associate": 3,
+              "bachelor": 2,
+              "adv_degree": 2,
+              "total": 18
+            }
+          ],
+          "women":[
+            {
+              "emp_status": "Civilian noninstitutional population",
+              "less_hs": 10795,
+              "hs_diploma": 31030,
+              "some_college": 18154,
+              "associate": 12780,
+              "bachelor": 26404,
+              "adv_degree": 15886,
+              "total": 115049
+            },
+            {
+              "emp_status": "Civilian labor force",
+              "less_hs": 3619,
+              "hs_diploma": 14884,
+              "some_college": 10089,
+              "associate": 8232,
+              "bachelor": 18104,
+              "adv_degree": 11571,
+              "total": 66499
+            },
+            {
+              "emp_status": "Participation rate",
+              "less_hs": 34,
+              "hs_diploma": 48,
+              "some_college": 56,
+              "associate": 64,
+              "bachelor": 69,
+              "adv_degree": 73,
+              "total": 343
+            },
+            {
+              "emp_status": "Employed",
+              "less_hs": 3394,
+              "hs_diploma": 14325,
+              "some_college": 9722,
+              "associate": 7994,
+              "bachelor": 17699,
+              "adv_degree": 11352,
+              "total": 64486
+            },
+            {
+              "emp_status": "Employment-population ratio",
+              "less_hs": 31,
+              "hs_diploma": 46,
+              "some_college": 54,
+              "associate": 63,
+              "bachelor": 67,
+              "adv_degree": 72,
+              "total": 332
+            },
+            {
+              "emp_status": "Unemployed",
+              "less_hs": 226,
+              "hs_diploma": 559,
+              "some_college": 367,
+              "associate": 237,
+              "bachelor": 405,
+              "adv_degree": 219,
+              "total": 2013
+            },
+            {
+              "emp_status": "Unemployment rate",
+              "less_hs": 6,
+              "hs_diploma": 4,
+              "some_college": 4,
+              "associate": 3,
+              "bachelor": 2,
+              "adv_degree": 2,
+              "total": 21
+            }
+          ],
+          "white":[
+            {
+              "emp_status": "Civilian noninstitutional population",
+              "less_hs": 16426,
+              "hs_diploma": 48922,
+              "some_college": 27043,
+              "associate": 18194,
+              "bachelor": 39511,
+              "adv_degree": 23057,
+              "total": 173153
+            },
+            {
+              "emp_status": "Civilian labor force",
+              "less_hs": 7906,
+              "hs_diploma": 28081,
+              "some_college": 16474,
+              "associate": 12500,
+              "bachelor": 28742,
+              "adv_degree": 16907,
+              "total": 110610
+            },
+            {
+              "emp_status": "Participation rate",
+              "less_hs": 48,
+              "hs_diploma": 57,
+              "some_college": 61,
+              "associate": 69,
+              "bachelor": 73,
+              "adv_degree": 73,
+              "total": 381
+            },
+            {
+              "emp_status": "Employed",
+              "less_hs": 7519,
+              "hs_diploma": 27183,
+              "some_college": 15992,
+              "associate": 12190,
+              "bachelor": 28139,
+              "adv_degree": 16613,
+              "total": 107636
+            },
+            {
+              "emp_status": "Employment-population ratio",
+              "less_hs": 46,
+              "hs_diploma": 56,
+              "some_college": 59,
+              "associate": 67,
+              "bachelor": 71,
+              "adv_degree": 72,
+              "total": 371
+            },
+            {
+              "emp_status": "Unemployed",
+              "less_hs": 387,
+              "hs_diploma": 898,
+              "some_college": 483,
+              "associate": 310,
+              "bachelor": 603,
+              "adv_degree": 294,
+              "total": 2975
+            },
+            {
+              "emp_status": "Unemployment rate",
+              "less_hs": 5,
+              "hs_diploma": 3,
+              "some_college": 3,
+              "associate": 3,
+              "bachelor": 2,
+              "adv_degree": 2,
+              "total": 17
+            }
+          ],
+          "black":[
+            {
+              "emp_status": "Civilian noninstitutional population",
+              "less_hs": 3062,
+              "hs_diploma": 9055,
+              "some_college": 5167,
+              "associate": 2885,
+              "bachelor": 4648,
+              "adv_degree": 2652,
+              "total": 27469
+            },
+            {
+              "emp_status": "Civilian labor force",
+              "less_hs": 1142,
+              "hs_diploma": 5337,
+              "some_college": 3438,
+              "associate": 2121,
+              "bachelor": 3600,
+              "adv_degree": 2067,
+              "total": 17705
+            },
+            {
+              "emp_status": "Participation rate",
+              "less_hs": 37,
+              "hs_diploma": 59,
+              "some_college": 67,
+              "associate": 74,
+              "bachelor": 77,
+              "adv_degree": 78,
+              "total": 392
+            },
+            {
+              "emp_status": "Employed",
+              "less_hs": 1029,
+              "hs_diploma": 5007,
+              "some_college": 3275,
+              "associate": 2041,
+              "bachelor": 3488,
+              "adv_degree": 2019,
+              "total": 16859
+            },
+            {
+              "emp_status": "Employment-population ratio",
+              "less_hs": 34,
+              "hs_diploma": 55,
+              "some_college": 63,
+              "associate": 71,
+              "bachelor": 75,
+              "adv_degree": 76,
+              "total": 374
+            },
+            {
+              "emp_status": "Unemployed",
+              "less_hs": 113,
+              "hs_diploma": 330,
+              "some_college": 163,
+              "associate": 80,
+              "bachelor": 112,
+              "adv_degree": 48,
+              "total": 846
+            },
+            {
+              "emp_status": "Unemployment rate",
+              "less_hs": 10,
+              "hs_diploma": 6,
+              "some_college": 5,
+              "associate": 4,
+              "bachelor": 3,
+              "adv_degree": 2,
+              "total": 30
+            }
+          ],
+          "asian":[
+            {
+              "emp_status": "Civilian noninstitutional population",
+              "less_hs": 1255,
+              "hs_diploma": 2421,
+              "some_college": 1146,
+              "associate": 956,
+              "bachelor": 4722,
+              "adv_degree": 3521,
+              "total": 14021
+            },
+            {
+              "emp_status": "Civilian labor force",
+              "less_hs": 483,
+              "hs_diploma": 1411,
+              "some_college": 754,
+              "associate": 670,
+              "bachelor": 3391,
+              "adv_degree": 2811,
+              "total": 9520
+            },
+            {
+              "emp_status": "Participation rate",
+              "less_hs": 38,
+              "hs_diploma": 58,
+              "some_college": 66,
+              "associate": 70,
+              "bachelor": 72,
+              "adv_degree": 80,
+              "total": 384
+            },
+            {
+              "emp_status": "Employed",
+              "less_hs": 468,
+              "hs_diploma": 1384,
+              "some_college": 734,
+              "associate": 653,
+              "bachelor": 3306,
+              "adv_degree": 2753,
+              "total": 9298
+            },
+            {
+              "emp_status": "Employment-population ratio",
+              "less_hs": 37,
+              "hs_diploma": 57,
+              "some_college": 64,
+              "associate": 68,
+              "bachelor": 70,
+              "adv_degree": 78,
+              "total": 375
+            },
+            {
+              "emp_status": "Unemployed",
+              "less_hs": 15,
+              "hs_diploma": 27,
+              "some_college": 20,
+              "associate": 17,
+              "bachelor": 85,
+              "adv_degree": 58,
+              "total": 222
+            },
+            {
+              "emp_status": "Unemployment rate",
+              "less_hs": 3,
+              "hs_diploma": 2,
+              "some_college": 3,
+              "associate": 3,
+              "bachelor": 3,
+              "adv_degree": 2,
+              "total": 15
+            }
+          ],
+          "hispanic":[
+            {
+              "emp_status": "Civilian noninstitutional population",
+              "less_hs": 9651,
+              "hs_diploma": 10838,
+              "some_college": 4754,
+              "associate": 2822,
+              "bachelor": 4630,
+              "adv_degree": 2062,
+              "total": 34757
+            },
+            {
+              "emp_status": "Civilian labor force",
+              "less_hs": 5660,
+              "hs_diploma": 7639,
+              "some_college": 3531,
+              "associate": 2169,
+              "bachelor": 3644,
+              "adv_degree": 1655,
+              "total": 24298
+            },
+            {
+              "emp_status": "Participation rate",
+              "less_hs": 59,
+              "hs_diploma": 71,
+              "some_college": 74,
+              "associate": 77,
+              "bachelor": 79,
+              "adv_degree": 80,
+              "total": 439
+            },
+            {
+              "emp_status": "Employed",
+              "less_hs": 5411,
+              "hs_diploma": 7394,
+              "some_college": 3411,
+              "associate": 2097,
+              "bachelor": 3543,
+              "adv_degree": 1621,
+              "total": 23477
+            },
+            {
+              "emp_status": "Employment-population ratio",
+              "less_hs": 56,
+              "hs_diploma": 68,
+              "some_college": 72,
+              "associate": 74,
+              "bachelor": 77,
+              "adv_degree": 79,
+              "total": 426
+            },
+            {
+              "emp_status": "Unemployed",
+              "less_hs": 248,
+              "hs_diploma": 245,
+              "some_college": 120,
+              "associate": 71,
+              "bachelor": 101,
+              "adv_degree": 34,
+              "total": 819
+            },
+            {
+              "emp_status": "Unemployment rate",
+              "less_hs": 4,
+              "hs_diploma": 3,
+              "some_college": 3,
+              "associate": 3,
+              "bachelor": 3,
+              "adv_degree": 2,
+              "total": 19
+            }
+          ]
+    };

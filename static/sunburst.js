@@ -426,13 +426,6 @@ const data2 = {
 
 
 
-
-
-
-
-
-  
-
 Sunburst()
     .data(data1)
     .size('size')

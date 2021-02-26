@@ -32,7 +32,7 @@ console.log(_hispanic);
 
 
 const data = {
-    name: '2019 US Employment',
+    name: '2019 US Employment by Gender',
     color: 'magenta',
     children: [{
       name: `Employed (${(100*_total[1].total/_total[0].total).toFixed(2)}%)`,
@@ -175,8 +175,348 @@ const data = {
     
   };
 
+  const data2 = {
+    name: '2019 US Employment by Ethnicity',
+    color: 'magenta',
+    children: [{
+      name: `Caucasian (${(100*_white[0].total/_total[0].total).toFixed(2)}%)`,
+      color: "#302366",
+      size: _white[0].total,
+      children: [{
+        name: `< HS Diploma (${(100*_white[0].less_hs/_total[0].total).toFixed(2)}%)`,
+        color: "cyan",
+        size: _white[0].less_hs,
+        children: [{
+          name: `Employed (${(100*_white[1].less_hs/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _white[1].less_hs
+        }, {
+          name: `Unemployed (${(100*_white[2].less_hs/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _white[2].less_hs
+        }]
+      }, {
+        name: `HS Diploma (${(100*_white[0].hs_diploma/_total[0].total).toFixed(2)}%)`,
+        color: "purple",
+        size: _white[0].hs_diploma,
+        children: [{
+          name: `Employed (${(100*_white[1].hs_diploma/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _white[1].hs_diploma
+        }, {
+          name: `Unemployed (${(100*_white[2].hs_diploma/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _white[2].hs_diploma
+        }]
+      }, {
+        name: `Some College (${(100*_white[0].some_college/_total[0].total).toFixed(2)}%)`,
+        color: "#349055",
+        size: _white[0].some_college,
+        children: [{
+          name: `Employed (${(100*_white[1].some_college/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _white[1].some_college
+        }, {
+          name: `Unemployed (${(100*_white[2].some_college/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _white[2].some_college
+        }]
+      }, {
+        name: `Associates (${(100*_white[0].associate/_total[0].total).toFixed(2)}%)`,
+        color: "#010567",
+        size: _white[0].associate,
+        children: [{
+          name: `Employed (${(100*_white[1].associate/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _white[1].associate
+        }, {
+          name: `Unemployed (${(100*_white[2].associate/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _white[2].associate
+        }]
+      }, {
+        name: `Bachelors (${(100*_white[0].bachelor/_total[0].total).toFixed(2)}%)`,
+        color: "#905978",
+        size: _white[0].bachelor,
+        children: [{
+          name: `Employed (${(100*_white[1].bachelor/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _white[1].bachelor
+        }, {
+          name: `Unemployed (${(100*_white[2].bachelor/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _white[2].bachelor
+        }]
+      }, {
+        name: `Advanced Degree (${(100*_white[0].adv_degree/_total[0].total).toFixed(2)}%)`,
+        color: "#777888",
+        size: _white[0].adv_degree,
+        children: [{
+          name: `Employed (${(100*_white[1].adv_degree/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _white[1].adv_degree
+        }, {
+          name: `Unemployed (${(100*_white[2].adv_degree/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _white[2].adv_degree
+        }]
+      }]
+    }, {
+      name: `African American (${(100*_black[0].total/_total[0].total).toFixed(2)}%)`,
+      color: "#589122",
+      size: _black[0].total,
+      children: [{
+        name: `< HS Diploma (${(100*_black[0].less_hs/_total[0].total).toFixed(2)}%)`,
+        color: "cyan",
+        size: _black[0].less_hs,
+        children: [{
+          name: `Employed (${(100*_black[1].less_hs/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _black[1].less_hs
+        }, {
+          name: `Unemployed (${(100*_black[2].less_hs/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _black[2].less_hs
+        }]
+      }, {
+        name: `HS Diploma (${(100*_black[0].hs_diploma/_total[0].total).toFixed(2)}%)`,
+        color: "purple",
+        size: _black[0].hs_diploma,
+        children: [{
+          name: `Employed (${(100*_black[1].hs_diploma/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _black[1].hs_diploma
+        }, {
+          name: `Unemployed (${(100*_black[2].hs_diploma/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _black[2].hs_diploma
+        }]
+      }, {
+        name: `Some College (${(100*_black[0].some_college/_total[0].total).toFixed(2)}%)`,
+        color: "#349055",
+        size: _black[0].some_college,
+        children: [{
+          name: `Employed (${(100*_black[1].some_college/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _black[1].some_college
+        }, {
+          name: `Unemployed (${(100*_black[2].some_college/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _black[2].some_college
+        }]
+      }, {
+        name: `Associates (${(100*_black[0].associate/_total[0].total).toFixed(2)}%)`,
+        color: "#010567",
+        size: _black[0].associate,
+        children: [{
+          name: `Employed (${(100*_black[1].associate/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _black[1].associate
+        }, {
+          name: `Unemployed (${(100*_black[2].associate/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _black[2].associate
+        }]
+      }, {
+        name: `Bachelors (${(100*_black[0].bachelor/_total[0].total).toFixed(2)}%)`,
+        color: "#905978",
+        size: _black[0].bachelor,
+        children: [{
+          name: `Employed (${(100*_black[1].bachelor/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _black[1].bachelor
+        }, {
+          name: `Unemployed (${(100*_black[2].bachelor/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _black[2].bachelor
+        }]
+      }, {
+        name: `Advanced Degree (${(100*_black[0].adv_degree/_total[0].total).toFixed(2)}%)`,
+        color: "#777888",
+        size: _black[0].adv_degree,
+        children: [{
+          name: `Employed (${(100*_black[1].adv_degree/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _black[1].adv_degree
+        }, {
+          name: `Unemployed (${(100*_black[2].adv_degree/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _black[2].adv_degree
+        }]
+      }]
+    }, {
+      name: `Asian (${(100*_asian[0].total/_total[0].total).toFixed(2)}%)`,
+      color: "#607242",
+      size: _asian[0].total,
+      children: [{
+        name: `< HS Diploma (${(100*_asian[0].less_hs/_total[0].total).toFixed(2)}%)`,
+        color: "cyan",
+        size: _asian[0].less_hs,
+        children: [{
+          name: `Employed (${(100*_asian[1].less_hs/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _asian[1].less_hs
+        }, {
+          name: `Unemployed (${(100*_asian[2].less_hs/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _asian[2].less_hs
+        }]
+      }, {
+        name: `HS Diploma (${(100*_asian[0].hs_diploma/_total[0].total).toFixed(2)}%)`,
+        color: "purple",
+        size: _asian[0].hs_diploma,
+        children: [{
+          name: `Employed (${(100*_asian[1].hs_diploma/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _asian[1].hs_diploma
+        }, {
+          name: `Unemployed (${(100*_asian[2].hs_diploma/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _asian[2].hs_diploma
+        }]
+      }, {
+        name: `Some College (${(100*_asian[0].some_college/_total[0].total).toFixed(2)}%)`,
+        color: "#349055",
+        size: _asian[0].some_college,
+        children: [{
+          name: `Employed (${(100*_asian[1].some_college/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _asian[1].some_college
+        }, {
+          name: `Unemployed (${(100*_asian[2].some_college/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _asian[2].some_college
+        }]
+      }, {
+        name: `Associates (${(100*_asian[0].associate/_total[0].total).toFixed(2)}%)`,
+        color: "#010567",
+        size: _asian[0].associate,
+        children: [{
+          name: `Employed (${(100*_asian[1].associate/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _asian[1].associate
+        }, {
+          name: `Unemployed (${(100*_asian[2].associate/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _asian[2].associate
+        }]
+      }, {
+        name: `Bachelors (${(100*_asian[0].bachelor/_total[0].total).toFixed(2)}%)`,
+        color: "#905978",
+        size: _asian[0].bachelor,
+        children: [{
+          name: `Employed (${(100*_asian[1].bachelor/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _asian[1].bachelor
+        }, {
+          name: `Unemployed (${(100*_asian[2].bachelor/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _asian[2].bachelor
+        }]
+      }, {
+        name: `Advanced Degree (${(100*_asian[0].adv_degree/_total[0].total).toFixed(2)}%)`,
+        color: "#777888",
+        size: _asian[0].adv_degree,
+        children: [{
+          name: `Employed (${(100*_asian[1].adv_degree/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _asian[1].adv_degree
+        }, {
+          name: `Unemployed (${(100*_asian[2].adv_degree/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _asian[2].adv_degree
+        }]
+      }]
+    }, {
+      name: `Hispanic (${(100*_hispanic[0].total/_total[0].total).toFixed(2)}%)`,
+      color: "#223533",
+      size: _hispanic[0].total,
+      children: [{
+        name: `< HS Diploma (${(100*_hispanic[0].less_hs/_total[0].total).toFixed(2)}%)`,
+        color: "cyan",
+        size: _hispanic[0].less_hs,
+        children: [{
+          name: `Employed (${(100*_hispanic[1].less_hs/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _hispanic[1].less_hs
+        }, {
+          name: `Unemployed (${(100*_hispanic[2].less_hs/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _hispanic[2].less_hs
+        }]
+      }, {
+        name: `HS Diploma (${(100*_hispanic[0].hs_diploma/_total[0].total).toFixed(2)}%)`,
+        color: "purple",
+        size: _hispanic[0].hs_diploma,
+        children: [{
+          name: `Employed (${(100*_hispanic[1].hs_diploma/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _hispanic[1].hs_diploma
+        }, {
+          name: `Unemployed (${(100*_hispanic[2].hs_diploma/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _hispanic[2].hs_diploma
+        }]
+      }, {
+        name: `Some College (${(100*_hispanic[0].some_college/_total[0].total).toFixed(2)}%)`,
+        color: "#349055",
+        size: _hispanic[0].some_college,
+        children: [{
+          name: `Employed (${(100*_hispanic[1].some_college/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _hispanic[1].some_college
+        }, {
+          name: `Unemployed (${(100*_hispanic[2].some_college/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _hispanic[2].some_college
+        }]
+      }, {
+        name: `Associates (${(100*_hispanic[0].associate/_total[0].total).toFixed(2)}%)`,
+        color: "#010567",
+        size: _hispanic[0].associate,
+        children: [{
+          name: `Employed (${(100*_hispanic[1].associate/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _hispanic[1].associate
+        }, {
+          name: `Unemployed (${(100*_hispanic[2].associate/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _hispanic[2].associate
+        }]
+      }, {
+        name: `Bachelors (${(100*_hispanic[0].bachelor/_total[0].total).toFixed(2)}%)`,
+        color: "#905978",
+        size: _hispanic[0].bachelor,
+        children: [{
+          name: `Employed (${(100*_hispanic[1].bachelor/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _hispanic[1].bachelor
+        }, {
+          name: `Unemployed (${(100*_hispanic[2].bachelor/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _hispanic[2].bachelor
+        }]
+      }, {
+        name: `Advanced Degree (${(100*_hispanic[0].adv_degree/_total[0].total).toFixed(2)}%)`,
+        color: "#777888",
+        size: _hispanic[0].adv_degree,
+        children: [{
+          name: `Employed (${(100*_hispanic[1].adv_degree/_total[0].total).toFixed(2)}%)`,
+          color: "#123456",
+          size: _hispanic[1].adv_degree
+        }, {
+          name: `Unemployed (${(100*_hispanic[2].adv_degree/_total[0].total).toFixed(2)}%)`,
+          color: "#147258",
+          size: _hispanic[2].adv_degree
+        }]
+      }]
+    }]
+  }
+
+  
+
   Sunburst()
-    .data(data)
+    .data(data2)
     .size('size')
     .color('color')
     .radiusScaleExponent(1)
